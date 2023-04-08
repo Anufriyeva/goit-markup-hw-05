@@ -34,7 +34,7 @@
     <!--Hero-->   
     <section class="hero-section">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
     </section>
     <!--benefits section-->
     <section class="benefits section">
@@ -310,6 +310,19 @@
             </div>
         </div>
         </footer>
+
+    <!--Popup-->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close>
+                <svg class="close-btn" width="8px" height="8px">
+                    <use href="./images/icons.svg#icon-close-bt"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
 </body>
 </html>
