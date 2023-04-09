@@ -372,10 +372,10 @@ body {
     border: 1px solid #E7E9FC;
     cursor: pointer;
 
-    transition: background-color 250ms var(--time-trans), 
-    color 250ms var(--time-trans),
-    box-shadow 250ms var(--time-trans),
-    border-color 250ms var(--time-trans);
+    transition: background-color var(--time-trans), 
+    color var(--time-trans),
+    box-shadow var(--time-trans),
+    border-color var(--time-trans);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus,
@@ -402,7 +402,7 @@ body {
 
 .portfolio-link {
     display: block;
-    transition: box-shadow 250ms var(--time-trans);
+    transition: box-shadow var(--time-trans);
 }
 
 .portfolio-link:hover,
@@ -432,14 +432,16 @@ body {
 .portfolio-cover-text {
     position: absolute;
     top: 0;
+    left: 0;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--alternate-text-color);
     background-color: var(--accent-color);
     padding: 40px 32px 0;
     height: 100%;
+    width: 100%;
     transform: translateY(100%);
-    transition: transform 250ms var(--time-trans);
+    transition: transform var(--time-trans);
 }
 .portfolio-cover-wrap {
     position: relative;
@@ -590,7 +592,7 @@ body {
 
 .close-btn {
     fill: #2e2f42;
-    transition: fill 250ms var(--time-trans)
+    transition: fill var(--time-trans)
 }
 
 .modal-btn:hover > .close-btn,
